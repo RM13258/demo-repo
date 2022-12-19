@@ -1,6 +1,6 @@
 # Demo
 
-Some description!
+Magazine 
 
 ## Subheader
 
