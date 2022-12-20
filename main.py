@@ -18,11 +18,26 @@ window.show()
 app.exec()
 
 """
-#Version Seting up a separate class
-
+#Version 2 Setting up a separate class
+"""
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
-class Buttonholder(QMainWindow)
+class ButtonHolder(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.setWindowTitle("Button")
+        button = QPushButton("Press here")
+
+        #Setup the button as our central widget
+        self.setCentralWidget(button)
+
+
+app = QApplication(sys.argv)
+
+window = ButtonHolder()
+window.show()
+app.exec()
+"""
+
+
